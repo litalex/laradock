@@ -1,0 +1,24 @@
+{
+    "name": "litalex/laradocklex",
+    "description": "Docker container for Laravel applications",
+    "keywords": [
+        "docker",
+        "laravel"
+    ],
+    "license": "MIT",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0",
+        "laravel/framework": "^5.3"
+    },
+    "author": [
+        {
+            "name": "Alexandr Litvin",
+            "email": "lit8lex@gmail.com"
+        }
+    ],
+    "post-root-package-install": [
+        "php -r \"copy('.env-example', '.env');\""
+    ]
+}
